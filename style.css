@@ -259,7 +259,7 @@ body {
   }
 
   .orb {
-    animation: simple-spin 20s linear infinite;
+    animation: simple-spin 10s linear infinite;
   }
 
   .orb-1 { width: 260px; height: 260px; }
@@ -776,8 +776,11 @@ body {
   body,
   .hero-section {
     background: #000 !important;
+    
   }
-
+.navbar-brand{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
   .hero-section::before {
     display: none !important;
   }
