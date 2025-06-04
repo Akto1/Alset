@@ -76,14 +76,4 @@ document.addEventListener('DOMContentLoaded', function() {
     labels[yearly ? 1 : 0].classList.add("active");
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Уменьшаем количество кадров анимации на мобильных
-    const isMobile =
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent
-      );
-    const orbs = document.querySelectorAll(".orb");
 
-
-
-    })
