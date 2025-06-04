@@ -788,6 +788,7 @@ body {
   }
 
   body, .hero-section {
+     font-family: 'Courier New', Courier, monospace;
     background: #000 !important;
   }
 }
