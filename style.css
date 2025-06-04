@@ -250,28 +250,12 @@ body {
 }
 
 
-@media (max-width: 768px) {
-  .orb-container {
-    width: 300px;
-    height: 300px;
-    transform: none;
-    perspective: none;
-  }
-
-  .orb {
-    animation: simple-spin 10s linear infinite;
-  }
-
-  .orb-1 { width: 260px; height: 260px; }
-  .orb-2 { width: 200px; height: 200px; }
-  .orb-3 { width: 140px; height: 140px; }
-  .orb-4 { width: 80px; height: 80px; }
 
   @keyframes simple-spin {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
   }
-}
+
 
 
 
@@ -778,6 +762,23 @@ body {
     background: #000 !important;
     
   }
+
+    .orb-container {
+      width: 300px;
+      height: 300px;
+      transform: none;
+      perspective: none;
+    }
+  
+    .orb {
+      animation: simple-spin 10s linear infinite;
+    }
+  
+    .orb-1 { width: 260px; height: 260px; }
+    .orb-2 { width: 200px; height: 200px; }
+    .orb-3 { width: 140px; height: 140px; }
+    .orb-4 { width: 80px; height: 80px; }
+  
 .navbar-brand{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
