@@ -76,4 +76,36 @@ document.addEventListener('DOMContentLoaded', function() {
     labels[yearly ? 1 : 0].classList.add("active");
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Уменьшаем количество кадров анимации на мобильных
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    const orbs = document.querySelectorAll(".orb");
 
+    if (isMobile) {
+      orbs.forEach((orb) => {
+        const currentAnim = orb.style.animation;
+        orb.style.animation = currentAnim.replace("15s", "20s");
+      });
+
+      // Отключаем анимацию при скролле для производительности
+      let lastScrollY = 0;
+     
+
+      window.addEventListener("scroll", function () {
+        lastScrollY = window.scrollY;
+
+ 
+
+        // Возобновляем анимацию через 1 сек после остановки скролла
+        clearTimeout(window.scrollTimeout);
+        window.scrollTimeout = setTimeout(function () {
+          orbs.forEach((orb) => {
+            orb.style.animationPlayState = "running";
+          });
+        }, 1000);
+      });
+    }
+  }); 
