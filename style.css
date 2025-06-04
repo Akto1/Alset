@@ -757,50 +757,52 @@ body {
 
 /* Адаптивность */
 @media (max-width: 768px) {
-  body,
-  .hero-section {
-    background: #000 !important;
-    
-  }
-
-    .orb-container {
-      width: 300px;
-      height: 300px;
-      transform: none;
-      perspective: none;
+  @media (max-width: 768px) {
+    body,
+    .hero-section {
+      background: #000 !important;
+      
     }
   
-    .orb {
-      animation: simple-spin 10s linear infinite;
+      .orb-container {
+        width: 300px;
+        height: 300px;
+        transform: none;
+        perspective: none;
+      }
+    
+      .orb {
+        animation: simple-spin 10s linear infinite;
+      }
+    
+      .orb-1 { width: 260px; height: 260px; }
+      .orb-2 { width: 200px; height: 200px; }
+      .orb-3 { width: 140px; height: 140px; }
+      .orb-4 { width: 80px; height: 80px; }
+    
+  .navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+    .hero-section::before {
+      display: none !important;
+    }
+  }
+  
+    .hero-title {
+      font-size: 2.5rem;
     }
   
-    orb-1 { width: 260px; height: 260px; }
-    .orb-2 { width: 200px; height: 200px; }
-    .orb-3 { width: 140px; height: 140px; }
-    .orb-4 { width: 80px; height: 80px; }
-    
-.navbar-brand{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-  .hero-section::before {
-    display: none !important;
-  }
-}
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .section {
-    padding: 70px 0;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .btn-primary {
-    width: 100%;
-    margin-bottom: 15px;
-  }
+    .section {
+      padding: 70px 0;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .btn-primary {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }  
 
