@@ -86,22 +86,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-      // Отключаем анимацию при скролле для производительности
-      let lastScrollY = 0;
-     
-
-      window.addEventListener("scroll", function () {
-        lastScrollY = window.scrollY;
-
- 
-
-        // Возобновляем анимацию через 1 сек после остановки скролла
-        clearTimeout(window.scrollTimeout);
-        window.scrollTimeout = setTimeout(function () {
-          orbs.forEach((orb) => {
-            orb.style.animationPlayState = "running";
-          });
-        }, 1000);
-      });
-    }
-  ); 
+    })
