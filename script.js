@@ -84,11 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
       );
     const orbs = document.querySelectorAll(".orb");
 
-    if (isMobile) {
-      orbs.forEach((orb) => {
-        const currentAnim = orb.style.animation;
-        orb.style.animation = currentAnim.replace("15s", "20s");
-      });
+
 
       // Отключаем анимацию при скролле для производительности
       let lastScrollY = 0;
@@ -108,4 +104,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000);
       });
     }
-  }); 
+  ); 
