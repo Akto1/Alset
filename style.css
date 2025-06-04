@@ -756,7 +756,7 @@ body {
 }
 
 /* Адаптивность */
-@media (max-width: 768px) {
+
   @media (max-width: 768px) {
     body,
     .hero-section {
@@ -804,5 +804,5 @@ body {
       width: 100%;
       margin-bottom: 15px;
     }
-  }  
+   
 
