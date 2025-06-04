@@ -766,25 +766,44 @@ body {
 }
 
 @media (max-width: 768px) {
-  .orb-container {
-    width: 280px;
-    height: 280px;
-    transform: none !important;
-    perspective: none !important;
-  }
-
   .orb {
-    animation: simple 15s linear infinite !important;
-    transform-style: flat !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 2px solid;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    border-color: rgba(0, 168, 255, 0.9);
+    box-shadow: 
+        0 0 15px rgba(0, 168, 255, 0.7),
+        inset 0 0 15px rgba(0, 168, 255, 0.5);
+    opacity: 0.9;
+    filter: brightness(1.2);
   }
-
-  .orb-1 { width: 260px; height: 260px; }
-  .orb-2 { width: 200px; height: 200px; }
-  .orb-3 { width: 140px; height: 140px; }
-  .orb-4 { width: 100px; height: 100px; }
-
-  .hero-section::before {
-    display: none !important;
+  
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+    animation: orb-rotate-1 12s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .orb-2 {
+    width: 300px;
+    height: 300px;
+    animation: orb-rotate-2 14s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .orb-3 {
+    width: 200px;
+    height: 200px;
+    animation: orb-rotate-3 16s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .orb-4 {
+    width: 100px;
+    height: 100px;
+    animation: orb-rotate-4 18s infinite cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   body, .hero-section {
