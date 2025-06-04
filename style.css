@@ -756,7 +756,7 @@ body {
 }
 
 /* Адаптивность */
-@keyframes simple {
+@keyframes simple-spin {
   0% {
     transform: translate(-50%, -50%) rotate(0deg);
   }
@@ -774,7 +774,7 @@ body {
   }
 
   .orb {
-    animation: simple 15s linear infinite !important;
+    animation: simple-spin 15s linear infinite !important;
     transform-style: flat !important;
   }
 
