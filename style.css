@@ -756,14 +756,7 @@ body {
 }
 
 /* Адаптивность */
-@keyframes simple-spin {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
+
 
 @media (max-width: 768px) {
   body,
@@ -771,17 +764,7 @@ body {
     background: #000 !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  .navbar-brand {
-    font-weight: 700;
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
+
   .orb-container {
     width: 300px;
     height: 300px;
@@ -796,7 +779,25 @@ body {
     top: 50%;
     left: 50%;
   }
-
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  @keyframes simple-spin {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
   .orb-1 { width: 280px; height: 280px; }
   .orb-2 { width: 220px; height: 220px; }
   .orb-3 { width: 160px; height: 160px; }
