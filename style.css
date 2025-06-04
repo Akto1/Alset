@@ -248,37 +248,31 @@ body {
   50% { transform: translate(-50%, -50%) rotateX(200deg) rotateY(80deg) rotateZ(100deg); opacity: 0.6; }
   75% { transform: translate(-50%, -50%) rotateX(270deg) rotateY(100deg) rotateZ(140deg); opacity: 0.4; }
 }
+
+
 @media (max-width: 768px) {
-  
-.navbar-brand {
-  font-weight: 700;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
-  font-family: cursive;
-
-}
-
   .orb-container {
-      width: 300px;
-      height: 300px;
-      box-shadow: none !important;
-      border-width: 2px;
-      opacity: 0.6;
-      padding: 15px;
-      
+    width: 300px;
+    height: 300px;
+    transform: none;
+    perspective: none;
   }
-  
-  .orb-1 { width: 280px; height: 280px; }
-  .orb-2 { width: 210px; height: 210px; }
+
+  .orb {
+    animation: simple-spin 20s linear infinite;
+  }
+
+  .orb-1 { width: 260px; height: 260px; }
+  .orb-2 { width: 200px; height: 200px; }
   .orb-3 { width: 140px; height: 140px; }
-  .orb-4 { width: 70px; height: 70px; }
-  
+  .orb-4 { width: 80px; height: 80px; }
+
+  @keyframes simple-spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
 }
+
 
 
 /* Секции */
@@ -779,6 +773,16 @@ body {
 
 /* Адаптивность */
 @media (max-width: 768px) {
+  body,
+  .hero-section {
+    background: #000 !important;
+  }
+
+  .hero-section::before {
+    display: none !important;
+  }
+}
+
   .hero-title {
     font-size: 2.5rem;
   }
@@ -795,4 +799,4 @@ body {
     width: 100%;
     margin-bottom: 15px;
   }
-}
+
