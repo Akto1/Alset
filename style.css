@@ -762,23 +762,23 @@ body {
 @media (max-width: 768px) {
   body,
   .hero-section {
-    background: #0a0a12 !important; /* Сохраняем фирменный тёмный фон *//* Оставляем современный шрифт */
+    background: #0a0a12 !important; /* Сохраняем фирменный тёмный фон */  
+    font-family: 'Courier New', Courier, monospace;
   }
- .col-lg-7{
-    color: lightgoldenrodyellow;
-    font-family:Georgia, 'Times New Roman', Times, serif ;
+
+  .container{
+    font-family:'Courier New', Courier, monospace;
+    color:burlywood;
   }
   .navbar-brand {
-    font-weight: 800; /* Более жирное начертание */
-    font-size: 1.8rem; /* Чуть уменьшаем размер для мобильных */
+    font-weight: 700;
+    font-size: 2.2rem;
     text-transform: uppercase;
-    background: linear-gradient(to bottom, blue 0%,aqua 100%); /* Фирменный ALSET градиент */
+    background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 12px rgba(61, 126, 255, 0.4); /* Усиленное свечение */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Приоритет Inter */
-    letter-spacing: -0.5px; /* Оптимальное расстояние между буквами */
+    text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
   }
 
   /* Дополнительные улучшения для мобильных */
