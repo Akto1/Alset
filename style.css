@@ -762,11 +762,12 @@ body {
 @media (max-width: 768px) {
   body,
   .hero-section {
-    background: #0a0a12 !important; /* Сохраняем фирменный тёмный фон */
-    color: lightgoldenrodyellow;
-    font-family:Georgia, 'Times New Roman', Times, serif /* Оставляем современный шрифт */
+    background: #0a0a12 !important; /* Сохраняем фирменный тёмный фон *//* Оставляем современный шрифт */
   }
-
+ .col-lg-7{
+    color: lightgoldenrodyellow;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+  }
   .navbar-brand {
     font-weight: 800; /* Более жирное начертание */
     font-size: 1.8rem; /* Чуть уменьшаем размер для мобильных */
