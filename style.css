@@ -766,10 +766,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
   }
 
-  .container{
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:#466267;
-  }
+ .hero-section h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #466267;
+ }
   .navbar-brand {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
