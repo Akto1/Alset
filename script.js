@@ -76,4 +76,74 @@ document.addEventListener('DOMContentLoaded', function() {
     labels[yearly ? 1 : 0].classList.add("active");
   });
 
+ document.addEventListener("DOMContentLoaded", function () {
+    const orbs = document.querySelectorAll(".optimized-orb");
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+
+    let angle = 0;
+    let lastTime = 0;
+    let speed = 0.3;
+    let lastScrollY = window.scrollY;
+    let scrollSpeed = 0;
+
+    // Отключаем стандартные CSS-анимации
+    orbs.forEach((orb) => {
+      orb.style.animation = "none";
+    });
+
+    // Адаптивное вращение
+    function animate(currentTime) {
+      if (document.hidden) {
+        requestAnimationFrame(animate);
+        return;
+      }
+
+      if (!lastTime) lastTime = currentTime;
+      const deltaTime = currentTime - lastTime;
+      lastTime = currentTime;
+
+      angle += speed * (deltaTime / 16);
+
+      orbs.forEach((orb, index) => {
+        const rotationSpeed = index === 1 ? -1 : 1;
+        orb.style.transform = `translate(-50%, -50%) rotate(${
+          angle * rotationSpeed * (0.5 + index * 0.3)
+        }deg)`;
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    // Скролл-ускорение
+    function updateSpeed() {
+      if (document.hidden) {
+        requestAnimationFrame(updateSpeed);
+        return;
+      }
+
+      const baseSpeed = 0.3;
+      const additionalSpeed = Math.min(scrollSpeed * 0.1, 2);
+      speed = baseSpeed + additionalSpeed;
+
+      scrollSpeed *= 0.9; // затухание
+      if (scrollSpeed < 0.01) scrollSpeed = 0;
+
+      requestAnimationFrame(updateSpeed);
+    }
+
+    // Обработка скролла
+    window.addEventListener("scroll", () => {
+      const currentScrollY = window.scrollY;
+      scrollSpeed = Math.abs(currentScrollY - lastScrollY);
+      lastScrollY = currentScrollY;
+    });
+
+    // Запуск
+    requestAnimationFrame(animate);
+    requestAnimationFrame(updateSpeed);
+  });
+
 
