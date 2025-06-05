@@ -755,21 +755,7 @@ body {
   transform: rotate(45deg);
 }
 
-/* Адаптивность */
-.optimized-animation {
-  width: 150vmax;
-  height: 150vmax;
-}
 
-.optimized-orb {
-animation: none !important;
-
-transition: transform 0.1s linear;
-
-
-  box-shadow: none;
-  animation-duration: 40s !important;
-}
 
 @media (max-width: 768px) {
   body,
@@ -795,9 +781,7 @@ transition: transform 0.1s linear;
   
 /* Мобильная версия — скрыть orb-container (CSS-анимации) */
 
-  .orb-container {
-    display: none !important;
-}
+
 
 /* Десктопная версия — скрыть optimized-orb (JS-анимации) */
 
