@@ -790,11 +790,7 @@ body {
 }
 
 /* Десктопная версия — скрыть optimized-orb (JS-анимации) */
-@media (min-width: 769px) {
-  .optimized-animation {
-    display: none !important;
-  }
-}
+
 
 
   .hero-section::before {
