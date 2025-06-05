@@ -767,18 +767,18 @@ body {
 
   
 
-  .orb-container {
-
-    width: 0;
-    height: 0;
-   
+  @media (max-width: 768px) {
+    .optimized-animation {
+        width: 150vmax;
+        height: 150vmax;
+    }
     
-  }
-  
-  .orb {
-   opacity: 0;
-  }
-
+    .optimized-orb {
+     
+        box-shadow: none;
+        animation-duration: 40s !important;
+    }
+}
 
 
   .navbar-brand {
