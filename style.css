@@ -782,12 +782,23 @@ body {
   }
 
   /* Дополнительные улучшения для мобильных */
-  
- .hero-title {
+
+  @media (max-width: 768px) {
+    .hero-title {
       font-family: 'Inter', sans-serif !important;
-      color: white ; /* или любой нужный цвет */
-      font-size: 40px; /* можно подогнать размер под телефон */
+      font-size: 40px !important;
+  
+      /* снимаем градиент-текст */
+      background: none !important;
+      -webkit-background-clip: initial !important;
+      background-clip: initial !important;
+  
+      /* задаём реальный цвет текста */
+      -webkit-text-fill-color: white !important;
+      color: white !important;
     }
+  }
+  
 
   .hero-subtitle {
     font-size: 1.1rem !important;
