@@ -770,7 +770,7 @@ body {
 
   .hero-section {
     background: #000 !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
   }
   
@@ -791,7 +791,6 @@ body {
   .hero-title {
     font-size: 3.2rem;
     font-weight: 800;
-    background: linear-gradient(to right, #00f2ff, #00d9ff);
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
     margin-bottom: 1rem;
@@ -805,7 +804,8 @@ body {
     line-height: 1.6;
   }
   
- 
+
+  
 
   
 /* Мобильная версия — скрыть orb-container (CSS-анимации) */
