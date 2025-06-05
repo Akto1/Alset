@@ -775,7 +775,9 @@ body {
     
   }
   
-
+  .orb {
+   opacity: 0.0;
+  }
 
 
 
