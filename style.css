@@ -783,10 +783,18 @@ body {
   
 /* Мобильная версия — скрыть orb-container (CSS-анимации) */
 
-
+@media (max-width: 768px) {
+  .orb-container {
+    display: none !important;
+  }
+}
 
 /* Десктопная версия — скрыть optimized-orb (JS-анимации) */
-
+@media (min-width: 769px) {
+  .optimized-animation {
+    display: none !important;
+  }
+}
 
 
   .hero-section::before {
