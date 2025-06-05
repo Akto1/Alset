@@ -782,13 +782,12 @@ body {
   }
 
   /* Дополнительные улучшения для мобильных */
-
-   h1 {
+  
+ .hero-title {
       font-family: 'Inter', sans-serif !important;
-      color: whitesmoke; /* или любой нужный цвет */
+      color: white ; /* или любой нужный цвет */
       font-size: 40px; /* можно подогнать размер под телефон */
     }
-  
 
   .hero-subtitle {
     font-size: 1.1rem !important;
