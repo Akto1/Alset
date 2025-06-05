@@ -805,10 +805,7 @@ body {
     line-height: 1.6;
   }
   
-  .hero-small::before {
-    background-color: #00f2ff;
-  }
-  
+ 
 
   
 /* Мобильная версия — скрыть orb-container (CSS-анимации) */
