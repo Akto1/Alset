@@ -787,7 +787,20 @@ body {
 
 /* Десктопная версия — скрыть optimized-orb (JS-анимации) */
 
+.optimized-animation {
+  width: 150vmax;
+  height: 150vmax;
+}
 
+.optimized-orb {
+animation: none !important;
+
+transition: transform 0.1s linear;
+
+
+  box-shadow: none;
+  animation-duration: 40s !important;
+}
 
   .hero-section::before {
     display: none !important;
