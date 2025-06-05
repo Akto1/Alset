@@ -763,6 +763,7 @@ body {
   body,
   .hero-section {
     background: #0a0a12 !important; /* Сохраняем фирменный тёмный фон */
+    color: lightgoldenrodyellow;
     font-family:Georgia, 'Times New Roman', Times, serif /* Оставляем современный шрифт */
   }
 
