@@ -783,7 +783,7 @@ body {
 
   /* Дополнительные улучшения для мобильных */
 
-    .hero-title {
+   h1 {
       font-family: 'Inter', sans-serif !important;
       color: white !important; /* или любой нужный цвет */
       font-size: 48px; /* можно подогнать размер под телефон */
