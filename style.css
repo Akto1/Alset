@@ -768,26 +768,56 @@ body {
 
 
 
+  .hero-section {
+    background: #000 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  /* ALSET.AI — яркий градиент и насыщенность */
   .navbar-brand {
-    font-weight: 700;
-    font-size: 2.2rem;
+    font-weight: 800;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #00f2ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+    letter-spacing: 1px;
   }
+  
+  /* Текст в hero */
+  .hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #00f2ff, #00d9ff);
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.3);
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle, .hero-small {
+    color: #cccccc;
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-small::before {
+    background-color: #00f2ff;
+  }
+  
 
   
 /* Мобильная версия — скрыть orb-container (CSS-анимации) */
 
-@media (max-width: 768px) {
+
   .orb-container {
     display: none !important;
   }
-}
+
 
 /* Десктопная версия — скрыть optimized-orb (JS-анимации) */
 
@@ -796,8 +826,8 @@ body {
   .hero-section::before {
     display: none !important;
   }
-}
 
+}
 @media (min-width: 769px) {
   .optimized-animation {
     display: none !important;
