@@ -774,7 +774,11 @@ body {
     }
     
     .optimized-orb {
+      animation: none !important;
      
+      transition: transform 0.1s linear;
+      
+      
         box-shadow: none;
         animation-duration: 40s !important;
     }
@@ -794,6 +798,14 @@ body {
   }
 
   
+/* Мобильная версия — скрыть orb-container (CSS-анимации) */
+
+  .orb-container {
+    display: none !important;
+}
+
+/* Десктопная версия — скрыть optimized-orb (JS-анимации) */
+
 
 
   .hero-section::before {
@@ -801,3 +813,8 @@ body {
   }
 }
 
+@media (min-width: 769px) {
+  .optimized-animation {
+    display: none !important;
+  }
+}
