@@ -763,19 +763,19 @@ body {
   body,
   .hero-section {
     background: #0a0a12 !important; /* Сохраняем фирменный тёмный фон */
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; /* Оставляем современный шрифт */
+    font-family:Georgia, 'Times New Roman', Times, serif /* Оставляем современный шрифт */
   }
 
   .navbar-brand {
     font-weight: 800; /* Более жирное начертание */
     font-size: 1.8rem; /* Чуть уменьшаем размер для мобильных */
     text-transform: uppercase;
-    background: linear-gradient(to bottom, #3d7eff 0%, #00c6ff 100%); /* Фирменный ALSET градиент */
+    background: linear-gradient(to bottom, blue 0%,aqua 100%); /* Фирменный ALSET градиент */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 0 0 12px rgba(61, 126, 255, 0.4); /* Усиленное свечение */
-    font-family: 'Inter', 'Segoe UI', sans-serif; /* Приоритет Inter */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Приоритет Inter */
     letter-spacing: -0.5px; /* Оптимальное расстояние между буквами */
   }
 
