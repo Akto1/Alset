@@ -756,7 +756,20 @@ body {
 }
 
 /* Адаптивность */
+.optimized-animation {
+  width: 150vmax;
+  height: 150vmax;
+}
 
+.optimized-orb {
+animation: none !important;
+
+transition: transform 0.1s linear;
+
+
+  box-shadow: none;
+  animation-duration: 40s !important;
+}
 
 @media (max-width: 768px) {
   body,
@@ -765,24 +778,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  
-
-  @media (max-width: 768px) {
-    .optimized-animation {
-        width: 150vmax;
-        height: 150vmax;
-    }
-    
-    .optimized-orb {
-      animation: none !important;
-     
-      transition: transform 0.1s linear;
-      
-      
-        box-shadow: none;
-        animation-duration: 40s !important;
-    }
-}
 
 
   .navbar-brand {
