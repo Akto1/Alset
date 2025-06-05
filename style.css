@@ -769,7 +769,11 @@ body {
 
 
  
-  .navbar-brand {
+
+  /* Дополнительные улучшения для мобильных */
+
+  @media (max-width: 768px) {
+      .navbar-brand {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
     font-size: 2.2rem;
@@ -781,9 +785,6 @@ body {
     text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
   }
 
-  /* Дополнительные улучшения для мобильных */
-
-  @media (max-width: 768px) {
     .hero-title {
       font-family: 'Inter', sans-serif !important;
       font-size: 40px !important;
