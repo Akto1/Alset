@@ -146,27 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
     requestAnimationFrame(updateSpeed);
   });
 
-    const form = document.getElementById('contact-form');
-    const thankYou = document.getElementById('thank-you-message');
-  
-    form.addEventListener('submit', function (e) {
-      e.preventDefault(); // предотвратить перезагрузку
-  
-      const formData = new FormData(form);
-      fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-      .then(response => {
-        form.style.display = 'none';
-        thankYou.style.display = 'block';
-      })
-      .catch(error => {
-        alert("Произошла ошибка. Попробуйте ещё раз.");
-      });
-    });
+
 
 
