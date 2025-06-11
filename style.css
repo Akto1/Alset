@@ -32,12 +32,12 @@ body {
   font-weight: 700;
   font-size: 2.2rem;
   text-transform: uppercase;
-  background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, wheat 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
-  font-family: cursive;
+  font-family:'Courier New', Courier, monospace
 
 }
 
@@ -97,12 +97,13 @@ body {
 }
 
 .hero-title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 3.2rem;
   font-weight: 800;
   line-height: 1.2;
-  color: #212529;
+  color:gainsboro;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, #2b3a8c 0%, #2962ff 100%);
+  background: linear-gradient(90deg, wheat 15%,white 85%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -112,7 +113,7 @@ body {
 .hero-subtitle {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #495057;
+  color:skyblue;
   margin-bottom: 1rem;
   max-width: 90%;
 }
@@ -608,33 +609,114 @@ body {
 }
 
 /* Форма */
+/* Общая стилизация секции формы */
 .form-section {
-  background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1a2e 100%);
-  border-radius: 20px;
-  padding: 50px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  background: #0b0b0b;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
 }
+
+.form-wrapper {
+  background: #0e0e11;
+  border-radius: 24px;
+  padding: 50px 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.05);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-wrapper h2 {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ff4ecd, #00f0ff);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-wrapper p {
+  font-size: 15px;
+  color: wheat;
+  margin-bottom: 10px;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-fields input,
+.form-fields textarea {
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #121218;
+  border-radius: 12px;
+  color: #e0e0e0;
+  font-size: 16px;
+  transition: 0.3s;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+.form-fields input::placeholder,
+.form-fields textarea::placeholder {
+  color: #777;
+}
+
+.form-fields input:focus,
+.form-fields textarea:focus {
+  border-color: #00f0ff;
+  box-shadow: 0 0 10px #00f0ff44;
+  outline: none;
+}
+
+.form-fields button {
+  background: linear-gradient(90deg, #ff4ecd, #00f0ff);
+  color: white;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px #00f0ff33;
+}
+
+.form-fields button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px #00f0ff66;
+}
+
+.privacy-note {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.privacy-note a {
+  color: #00f0ff;
+  text-decoration: underline;
+}
+
+
 
 h5{
   font-size: 12.7px;
   padding-top: 5%;
 }
-.form-control {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  padding: 15px 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  transition: all 0.3s;
-}
-
 .form-control:focus {
-  background: linear-gradient(180deg, white, rgb(33, 123, 156));
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 3px rgba(106, 48, 147, 0.2);
+  outline: none;
+  border-color: #2962ff;
+  background: rgba(255, 255, 255, 0.08);
 }
-
 /* Футер */
 .footer {
   background-color: #0a0a12;
@@ -759,9 +841,8 @@ h5{
   transform: rotate(45deg);
 }
 
-.mb-3{
-  background-color: #466267;
-}
+
+
 
 @media (max-width: 768px) {
   body,
@@ -774,15 +855,16 @@ h5{
 
  
   .navbar-brand {
-    font-family:Marker Felt, fantasy;
     font-weight: 700;
     font-size: 2.2rem;
     text-transform: uppercase;
-    background: linear-gradient(to bottom, #ffffff 0%, #00d8ff 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, wheat 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
+    font-family:'Courier New', Courier, monospace
+  
   }
 
   /* Дополнительные улучшения для мобильных */
@@ -804,10 +886,13 @@ h5{
   
   
 
-  .hero-subtitle {
-    font-size: 1.1rem !important;
-    line-height: 1.5;
-  }
+    .hero-subtitle {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color:skyblue;
+      margin-bottom: 1rem;
+      max-width: 90%;
+    }
 
   .btn {
     padding: 14px 28px !important;
