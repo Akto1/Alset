@@ -673,12 +673,17 @@
         <h2>Хочешь протестировать AI-менеджера?</h2>
         <p>Оставь заявку и получи <strong>бесплатную</strong> консультацию</p>
       </div>
-      <form class="form-fields">
-        <input type="text" placeholder="Ваше имя" required />
-        <input type="text" placeholder="Telegram / WhatsApp" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Чем занимается ваш бизнес" rows="4" required></textarea>
+      <form class="form-fields" action="https://formsubmit.co/Alsetai@mail.ru" method="POST">
+        <input type="hidden" name="_next" value="https://alset.ai">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="text" name="messenger" placeholder="Telegram / WhatsApp" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="business" placeholder="Чем занимается ваш бизнес" rows="4" required></textarea>
+        
         <button type="submit">Оставить заявку</button>
+        
         <p class="privacy-note">
           Оставляя заявку, вы соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>
           и даёте согласие на обработку персональных данных.
@@ -686,6 +691,7 @@
       </form>
     </div>
   </section>
+  
   
       <!-- Футер -->
       <footer class="footer">
